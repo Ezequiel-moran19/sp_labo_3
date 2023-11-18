@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body.activo {
+    overflow: auto;
+}
+
+#mostrar {
+
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+#mostrar.ocultar {
+
+    top: -100%;
+    opacity: 0;
+}
+
+#cerrar {
+    margin-left: 20px;
+    top: 10px;
+    color: black;
+}
+
+#cerrar:hover {
+    cursor: pointer;
+}
+
+#alerta {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: 10px;
+    font-size: 18px;
+}
+
+thead {
+    background: whitesmoke;
+}
+
+td {
+    padding: 8px;
+    background: #dff7f7;
+    border: 4px solid white;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+tr:hover td {
+    background: #8bdaf7;
+    border: 4px solid white;
+    color: white;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spinnerLeo {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.show {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+input.button {
+    width: 100%;
+    background-color: #0061d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 8px;
+}
+
+div.alta input {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input.button:hover {
+    background-color: #87fff8;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+div.divTabla {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.abm {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+    margin: 30px;
+    top: 50px;
+    border-radius: 4px;
+    background-color: #87CEFA; 
+    width: 40%;
+    max-width: 400px; 
+}
+
+.abm label {
+    display: inline-block;
+    width: 100px;
+    margin: 5px;
+}
+
+.abm input,
+.abm select {
+    width: 100%; 
+    margin: 5px 0;
+}
+
+.abm .botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.abm .error {
+    background-color: red;
+    width: 90%;
+}
